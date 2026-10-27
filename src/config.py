@@ -18,7 +18,8 @@ class Settings:
     REPORTS_PATH: Path = PROJECT_ROOT / "reports"
 
     # Model Paths
-    RESNET_MODEL_PATH: Path = Path(
+    RESNET_MODEL_PATH: 
+    Path = Path(
         os.getenv(
             "MEDICAL_DOCUMENT_RESNET_MODEL_PATH",
             str(MODELS_DIR / "medical_document_resnet18.pth"),
