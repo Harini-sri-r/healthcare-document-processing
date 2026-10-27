@@ -1,0 +1,12 @@
+torch
+torchvision
+Pillow
+requests
+fastapi
+uvicorn
+SQLAlchemy
+psycopg2-binary
+python-multipart
+pytest
+pydantic>=2.0
+pymupdf

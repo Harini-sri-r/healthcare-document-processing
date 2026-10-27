@@ -1,0 +1,59 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Output and report artifacts (keep folder tracked)
+reports/*
+!reports/.gitkeep
+data/originals/
+
+# IDE and OS files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Large models & datasets (optional: track with DVC or git-lfs if using remote git)
+# models/*.pth
+# models/qwen2.5-vl-3b-instruct/*.safetensors
+
+# Local environments and caches
+.venv/
+__pycache__/
+.pytest_cache/
+.qodo/
+wheels/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Datasets, private documents, and local model weights
+data/
+test_new_documents/
+models/
+
+# Generated reports
+reports/
+
+# Large model files
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.onnx
