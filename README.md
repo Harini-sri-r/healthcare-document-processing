@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Production Healthcare Document AI System
 
 A production-oriented AI system for medical document classification, extraction, and validation.
@@ -240,3 +241,7 @@ Automatic verification stays disabled by default. To enable it locally, set `MED
 The verifier sends original rendered image pages in Ollama `/api/chat`'s `messages[].images` base64 image input and includes Qwen's original parsed JSON (and raw text when stored) in the prompt. When automatic verification is enabled, the pipeline asks Ollama to release Qwen before loading Granite; Granite is requested with `keep_alive=0` so it is unloaded afterward. Failed Qwen release prevents Granite inference and routes the document to human review. This reduces overlapping model residency on CPU-only computers. Ollama/model inference can take several minutes; `MEDICAL_DOCUMENT_SECOND_MODEL_VERIFICATION_TIMEOUT` defaults to 600 seconds. Actual latency is recorded per run. CPU-only use may be slow; available memory requirements depend on the Ollama model build and quantization.
 
 New raw Qwen output is stored in `document_extraction_raw`; verification reports and separate reviewer resolutions are stored in `document_verification_runs`. Older records have no recoverable raw output. They can still be compared using stored parsed JSON. For privacy, verification uses the configured local Ollama endpoint; do not point it at a remote endpoint unless that data handling is approved for the documents being processed.
+=======
+# healthcare-document-processing
+AI-powered healthcare document classification and structured information extraction using ResNet-18, Qwen2.5-VL, and FastAPI.
+>>>>>>> origin/main
